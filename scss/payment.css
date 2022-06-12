@@ -1,0 +1,571 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+}
+
+html a {
+  text-decoration: none;
+}
+
+html a:hover {
+  opacity: 0.6;
+}
+
+html img {
+  max-width: 100%;
+  height: auto;
+}
+
+html img a:hover {
+  opacity: 0.6;
+}
+
+sub {
+  font-size: 50%;
+  vertical-align: center;
+}
+
+.mobile {
+  display: none;
+}
+
+.wrap {
+  max-width: 100%;
+  position: relative;
+}
+
+.header {
+  min-height: 100vh;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav .header-logo {
+  padding: 24px 0px 24px 10%;
+}
+
+.header-nav .header-logo img {
+  height: 40px;
+}
+
+.header-nav .header-box {
+  background: #FF5D50;
+  border-radius: 22px;
+  margin-right: 10%;
+}
+
+.header-nav .header-box a {
+  color: #fff;
+  display: block;
+  padding: 8px 32px;
+  font-size: 16px;
+}
+
+.fc-black {
+  color: #221e1f;
+}
+
+.fc-gray {
+  color: #747474;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.top-bg-box {
+  background: #F7F9FD;
+  top: 0;
+  left: 0;
+  height: 470px;
+  width: 100%;
+  z-index: -999;
+  position: absolute;
+  border-radius: 0px 0px 0px 300px;
+}
+
+.top {
+  max-width: 100%;
+  padding-left: 10%;
+  padding-top: 92px;
+}
+
+.top .top-content {
+  width: 50%;
+}
+
+.top .top-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.top .top-content p {
+  font-size: 20px;
+  padding-top: 16px;
+}
+
+.top-image .top-image-main {
+  height: 559px;
+  right: 0;
+  top: 0;
+}
+
+.btn-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  right: 48px;
+  bottom: 10vh;
+}
+
+.btn-top a {
+  border-radius: 50%;
+  background: #56C4C5;
+  font-size: 20px;
+  padding: 24px 14px;
+  text-align: center;
+  color: white;
+}
+
+.main {
+  background-image: url("..img/ball03.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: -267px center;
+  background-size: 361px;
+  margin: 0 auto;
+  padding-top: 11px;
+}
+
+.main .program {
+  padding-bottom: 48px;
+}
+
+.main .program h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.main .program ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-top: 48px;
+  overflow: auto;
+  font-size: 18px;
+}
+
+.main .program .program-btn a {
+  white-space: nowrap;
+  color: #56C4C5;
+  display: block;
+  padding: 12px 32px;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+  margin-right: 16px;
+}
+
+.main .program a:hover, .main .program a.active {
+  background: #56C4C5;
+  color: #fff;
+}
+
+.main .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 66.67%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.main .card .card-card {
+  margin: 0 10px;
+  width: 444px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  margin-bottom: 24px;
+  background: #fff;
+}
+
+.main .card .card-card h3 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 2px solid gray;
+}
+
+.main .card .card-card p {
+  padding-top: 36px;
+  padding-bottom: 32px;
+  font-size: 16px;
+}
+
+.main .card .card-price {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 29px;
+}
+
+.main .card .card-price h4 {
+  font-size: 12px;
+}
+
+.main .card .card-price p, .main .card .card-price span {
+  padding-top: 8px;
+  font-size: 32px;
+}
+
+.main .card .card-price .card-price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  padding: 24px 16px;
+  margin-bottom: 32px;
+}
+
+.main .card .card-price .card-price-box p {
+  padding-bottom: 0px;
+}
+
+.main .card .card-price .card-price-box .charge, .main .card .card-price .card-price-box .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .card .card-price .card-price-box span {
+  padding-left: 8px;
+}
+
+.main .card .card-price .card-price-item1 p, .main .card .card-price .card-price-item1 span {
+  color: #56C4C5;
+}
+
+.main .card ul {
+  list-style-image: url("../img/icon_check.svg");
+  text-align: left;
+  padding-bottom: 42px;
+}
+
+.main .card ul li {
+  padding-top: 16px;
+}
+
+.main .card .card-benefit {
+  padding-left: 29px;
+}
+
+.main .card-btn {
+  margin-bottom: 38px;
+}
+
+.main .card-btn a {
+  display: block;
+  text-align: center;
+  background: #56C4C5;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 27px;
+}
+
+.main .question {
+  padding-top: 76px;
+  width: 66.67%;
+  margin: 0 auto;
+}
+
+.main .question h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 48px;
+}
+
+.main .question li {
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 16px 32px 16px 32px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+}
+
+.main .question li > p {
+  display: none;
+  font-size: 16px;
+  padding-top: 24px;
+}
+
+.main .faq_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .faq_title button {
+  background: white;
+  border: none;
+}
+
+.main .faq_title button:hover {
+  cursor: pointer;
+}
+
+.main .faq_title p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main .faq_title p.active {
+  color: #56C4C5;
+}
+
+.main .faq_title a {
+  display: block;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 76px;
+  background: #F5F5F5;
+  text-align: center;
+  font-weight: normal;
+}
+
+.footer h3 {
+  padding: 16px 0px;
+}
+
+@media (max-width: 576px) {
+  .wrap {
+    max-width: 100%;
+  }
+  .header-nav {
+    width: 100%;
+    border-bottom: 3px solid #F6CB52;
+  }
+  .header-nav .header-logo {
+    padding-left: 20px;
+  }
+  .header-nav .header-logo img {
+    height: 24px;
+  }
+  .header-nav .header-box {
+    margin-right: 20px;
+  }
+  .top-bg-box {
+    top: 75px;
+    height: 495px;
+    border-radius: 0px 0px 0px 150px;
+  }
+  .top {
+    height: 495px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 48px 0px 0px 0px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left top;
+    background-image: url("../img/banner_sm.svg");
+  }
+  .top .top-content {
+    width: 100%;
+  }
+  .top .top-content span {
+    font-size: 16px;
+  }
+  .top .top-content h3 {
+    font-size: 32px;
+  }
+  .top .top-content p {
+    padding-top: 16px;
+    font-size: 16px;
+  }
+  .top h3 {
+    font-size: 32px;
+  }
+  .top p {
+    font-size: 16px;
+    padding-top: 16px;
+  }
+  .top-image .top-image-main {
+    display: none;
+  }
+  .btn-top {
+    font-size: 14px;
+    padding: 16px 10px;
+    right: 16px;
+  }
+  .main .program {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main .program h3 {
+    font-size: 28px;
+  }
+  .main .program ul {
+    padding: 24px 0px 32px 0px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main .card {
+    width: 90%;
+  }
+  .main .card .card-price {
+    padding: 0px 16px;
+  }
+  .main .card .card-price p {
+    font-size: 28px;
+  }
+  .main .card .card-price .card-price-box {
+    padding: 16px;
+  }
+  .main .card .card-benefit {
+    line-height: 1.5;
+    margin-left: 16px;
+    padding-right: 16px;
+  }
+  .main .card-card {
+    max-width: 100%;
+  }
+  .main .question {
+    width: 90%;
+    padding-top: 24px;
+  }
+  .main .question h3 {
+    padding-bottom: 32px;
+  }
+  .main .question h4 {
+    font-size: 16px;
+  }
+  .main .question .faq_title {
+    padding: 16px;
+  }
+}
+/*# sourceMappingURL=payment.css.map */
